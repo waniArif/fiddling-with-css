@@ -1,6 +1,58 @@
 /* background-attachment */
 
-* {
+div {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+.one {
+  background: linear-gradient(to top, rgb(97, 80, 80), green);
+}
+.two {
+  background: linear-gradient(
+    to left,
+    red,
+    green,
+    blue,
+    #234564,
+    white,
+    wheat,
+    purple
+  );
+}
+.three {
+  background: linear-gradient(
+    315deg,
+    red,
+    green,
+    blue,
+    #234564,
+    white,
+    wheat,
+    purple
+  );
+}
+.four {
+  background: linear-gradient(
+    to top right,
+    red,
+    green,
+    blue,
+    #234564,
+    white,
+    wheat,
+    purple
+  );
+}
+.five {
+  background: linear-gradient(blue 20%, yellow 70%);
+}
+.six {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+}
+
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,7 +82,7 @@ div {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* background-attachment: scroll; */
+ 
 }
 .folder-img {
   background: url("./big.jpeg");
@@ -38,4 +90,4 @@ div {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
+} */
