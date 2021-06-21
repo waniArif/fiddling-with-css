@@ -1,58 +1,6 @@
 /* background-attachment */
 
-div {
-  width: 150px;
-  height: 150px;
-  margin: 5px;
-}
-
-.one {
-  background: linear-gradient(to top, rgb(97, 80, 80), green);
-}
-.two {
-  background: linear-gradient(
-    to left,
-    red,
-    green,
-    blue,
-    #234564,
-    white,
-    wheat,
-    purple
-  );
-}
-.three {
-  background: linear-gradient(
-    315deg,
-    red,
-    green,
-    blue,
-    #234564,
-    white,
-    wheat,
-    purple
-  );
-}
-.four {
-  background: linear-gradient(
-    to top right,
-    red,
-    green,
-    blue,
-    #234564,
-    white,
-    wheat,
-    purple
-  );
-}
-.five {
-  background: linear-gradient(blue 20%, yellow 70%);
-}
-.six {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
-}
-
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -66,14 +14,15 @@ div {
   align-items: center;
   font-size: 2rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .big-img {
-  background: url("./big.jpeg");
-  background-repeat: no-repeat;
+  background: url("./big.jpeg") center/cover no-repeat fixed;
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center; */
+  /* background-attachment: fixed; */
 }
 .small-img {
   background: url("./images/folder-img.jpeg");
@@ -82,12 +31,40 @@ div {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
- 
 }
 .folder-img {
-  background: url("./big.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-} */
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.2),
+      rgba(255, 100, 239, 0.2)
+    ),
+    url("./big.jpeg") center/cover no-repeat fixed;
+
+  /* background-attachment: fixed; another wayto add is show above in this selector*/
+}
+.colorzilla {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0b7a1+0,8c3310+50,752201+51,bf6e4e+100;Brown+Gloss */
+  background: rgb(240, 183, 161); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(240, 183, 161, 1) 0%,
+    rgba(140, 51, 16, 1) 50%,
+    rgba(117, 34, 1, 1) 51%,
+    rgba(191, 110, 78, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(240, 183, 161, 1) 0%,
+    rgba(140, 51, 16, 1) 50%,
+    rgba(117, 34, 1, 1) 51%,
+    rgba(191, 110, 78, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(240, 183, 161, 1) 0%,
+    rgba(140, 51, 16, 1) 50%,
+    rgba(117, 34, 1, 1) 51%,
+    rgba(191, 110, 78, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+}
